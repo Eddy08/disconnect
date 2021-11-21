@@ -33,9 +33,12 @@
               "src/styles.css"
             ],
             "scripts": [
+              "./node_modules/material-design-icons/iconfont/material-icons.css",
             "./node_modules/video.js/dist/video.min.js",
               "./node_modules/videojs-youtube/dist/Youtube.min.js",
-              "./node_modules/videojs-offset/dist/videojs-offset.js"
+              "./node_modules/videojs-offset/dist/videojs-offset.js",
+              "./node_modules/toastr/toastr.js",
+              "./node_modules/toastr/toastr.scss" 
             ]
           },
           "configurations": {
