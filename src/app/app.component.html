@@ -1,3 +1,6 @@
-<app-search-bar></app-search-bar>
-<app-search-button></app-search-button>
+<app-search-bar (searchQuery)="handleSearchedQuery($event)"></app-search-bar>
+<app-search-button (progressBarResult)="handleResultQuery($event)"></app-search-button>
+<span>
+    {{searchedQuery}}
+</span>
 <app-content></app-content>

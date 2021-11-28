@@ -1,10 +1,10 @@
 <div class="outer-box">
 
-    <button mat-fab color="primary" aria-label="Example icon button with a delete icon" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+    <button holdable (holdTime)="holdHandler($event)" mat-fab color="primary" aria-label="Example icon button with a delete icon" matBadge="{{progressBar}}"   matTooltip="📱 of searched result" matBadgePosition="before" matBadgeColor="accent">
         <mat-icon>search</mat-icon>
     </button>
     <div class="outer-circle">
-        <app-search-btn></app-search-btn>
+        <app-search-btn [percent]="progressBar"></app-search-btn>
         
     </div>
 </div>

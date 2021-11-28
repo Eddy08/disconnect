@@ -1,6 +1,6 @@
-<mat-form-field class="example-form-field" appearance="outline">
+<mat-form-field class="input-form-field" appearance="outline">
     <mat-label>Search Keyword</mat-label>
-    <input matInput type="text" [(ngModel)]="searchKeyword">
+    <input matInput type="text" [(ngModel)]="searchKeyword" (change)="handleInputFields()">
     <button *ngIf="searchKeyword" matSuffix mat-icon-button aria-label="Clear" (click)="searchKeyword=''">
       <mat-icon>close</mat-icon>
     </button>

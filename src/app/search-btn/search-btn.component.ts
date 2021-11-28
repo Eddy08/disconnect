@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-search-btn',
@@ -7,19 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBtnComponent {
 
- percent= 75
+
+
+  @Input() percent:number=1;
  radius= 60
  outerStrokeWidth= 10
  innerStrokeWidth= 10
  space= -10
  outerStrokeColor= "#defdef"
- innerStrokeColor= "#ce7e8e"
- animation = true
-animationDuration= 1000
- 
+ innerStrokeColor= "#fff"
+ animation = false
+animationDuration= 100
   ngOnInit() {
- 
   }
- 
+
+
+  
 }
 
