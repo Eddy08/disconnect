@@ -12,10 +12,10 @@ export class SearchBtnComponent {
  outerStrokeWidth= 10
  innerStrokeWidth= 10
  space= -10
- outerStrokeColor= "#4882c2"
- innerStrokeColor= "#e7e8ea"
+ outerStrokeColor= "#defdef"
+ innerStrokeColor= "#ce7e8e"
  animation = true
- animationDuration= 1000
+animationDuration= 1000
  
   ngOnInit() {
  

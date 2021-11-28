@@ -1,0 +1,17 @@
+.outer-box{
+    display: inline-block;
+    position: relative;
+    border:2px red solid;
+    height:100%;
+    padding:3em;
+    box-sizing: content-box;
+}
+.outer-circle{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index: -10;
+    height: inherit;
+}

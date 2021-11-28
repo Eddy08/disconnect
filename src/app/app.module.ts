@@ -53,6 +53,7 @@ import { MatTableModule } from '@angular/material/table';
 import { SearchButtonComponent } from './search-button/search-button.component';
 import { MatIconModule } from '@angular/material/icon';
 import { SearchBtnComponent } from './search-btn/search-btn.component';
+import { HoldableDirective } from './holdable.directive';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { SearchBtnComponent } from './search-btn/search-btn.component';
     SearchBarComponent,
     ContentComponent,
     SearchButtonComponent,
-    SearchBtnComponent
+    SearchBtnComponent,
+    HoldableDirective
   ],
   imports: [
     NgCircleProgressModule.forRoot(),
