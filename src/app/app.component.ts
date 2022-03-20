@@ -14,7 +14,7 @@ export class AppComponent implements OnInit{
   handleInfo(msg: string,title?:"Operation Success"){
     this.toastrService.success(msg,title);
   }
-   query:string="fireship";
+   query:string="hanuman";
   results:number=1;
   searchedQuery="https://youtube.com/"+this.query+"/"+this.results
   handleSearchedQuery(e:any){

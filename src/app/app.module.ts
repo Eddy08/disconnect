@@ -1,7 +1,9 @@
 import {ToastrService} from './common/toastr.service'
+import {ApiCallService} from './common/api.service'
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { Input, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -65,6 +67,7 @@ import { HoldableDirective } from './holdable.directive';
     HoldableDirective
   ],
   imports: [
+    HttpClientModule,
     NgCircleProgressModule.forRoot(),
     BrowserModule,
     BrowserAnimationsModule,
@@ -106,7 +109,7 @@ import { HoldableDirective } from './holdable.directive';
     MatSortModule,
     MatTableModule
   ],
-  providers: [ToastrService],
+  providers: [ToastrService,ApiCallService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

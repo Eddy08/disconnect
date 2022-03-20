@@ -1,1 +1,27 @@
-<p>content works!</p>
+<h2>{{searchedKeyword}}</h2>
+<h2>{{filter}}</h2>
+<div *ngIf="videoData">
+<div *ngFor="let data of videoData| keyvalue">
+    <div *ngIf="data.key.includes('items')">
+        <div *ngFor="let items of data.value|keyvalue">
+            <div *ngIf="items">
+                <div *ngFor="let id of items.key.includes('id') |keyvalue">
+                    <div *ngIf="id">
+                        <!-- <div *ngFor="let videoId of id|keyvalue">
+                            <div *ngIf="videoId.key.includes('videoId')">
+                                <iframe width="100%" height="100%" 
+                                src="https://www.youtube.com/embed/"+ {{id.videoId}}  allowfullscreen>
+                                  </iframe> 
+                              <h2> id  {{id.value}}</h2>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <h2> id  {{(items.value) |json}}</h2>
+            </div> 
+            <!-- <h2>value{{value|json}}</h2> -->
+        </div>
+    </div>
+   <p>Data -> {{data.key}}:{{data.value}}</p>
+</div>
+</div>
